@@ -1,0 +1,255 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Reset CSS */
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    background-color:  rgb(237, 13, 13); /* Warna latar belakang biru untuk container */
+    height: 100vh; /* Tinggi 100% dari viewport height */
+}
+
+/* Header Styling */
+.container header {
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+/* Main Container Styling */
+.kotak {
+    height: 80vh; /* Tinggi 80% dari viewport height */
+    background-color: #F3F3F3; /* Warna latar belakang abu-abu untuk main container */
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+/* Sidebar Styling */
+.kiri {
+    display: flex;
+    flex-direction: column;
+}
+
+.kiri button, .satu {
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color:  rgb(237, 13, 13); /* Warna latar belakang biru untuk tombol */
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.satu {
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    text-align: center;
+    background-color:  rgb(237, 13, 13); /* Warna latar belakang biru untuk bagian satu */
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.satu option {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.dua {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* Shopping Cart Styling */
+.belanja {
+    margin-left: 5px;
+    height: 60vh; /* Tinggi 60% dari viewport height */
+    border: 2px solid black;
+    width: 390px;
+    overflow-y: scroll; /* Menambahkan scroll jika isi melebihi ketinggian */
+    padding: 5px;
+}
+
+.belanja .barang {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.barang .normal {
+    font-size: smaller;
+}
+
+.barang img {
+    max-width: 20px;
+}
+
+.barang button {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.barang button span {
+    font-size: 30px;
+}
+
+/* Total Price Styling */
+.jajan {
+    padding: 2em 1em 0 1em;
+    color: black;
+    font-size: 12px;
+    background-color: white;
+    margin: 6px;
+    width: 100%;
+}
+
+.pay {
+    font-size: 12px;
+    background-color:  rgb(237, 13, 13); /* Warna latar belakang biru untuk bagian pembayaran */
+    padding: 2px;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main Content Styling */
+.kanan {
+    width: 1200px;
+    margin-right: 5px;
+}
+
+/* Navbar Styling */
+.kanan nav {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: white;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.kanan nav .nav_kanan span {
+    font-size: 27px;
+}
+
+.kanan nav .nav_kanan {
+    display: flex;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan input {
+    padding: 5px;
+}
+
+.cari {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Section Styling */
+/* Item Styling */
+.kanan section .isi .foto img {
+    width: 85%;
+    margin: 5px;
+    height: 10vh;
+    border: 1px solid #bbb;
+}
+
+.kanan section .isi {
+    margin: 5px;
+    border: 3px solid #c7c1c1;
+    width: 130px;
+    height: 145px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.kanan section .isi p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 71, 71);
+}
+
+.kanan section .isi h1 {
+    font-size: 15px;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    padding-top: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Footer Styling */
+.payment {
+    height: 8vh; /* Tinggi 8% dari viewport height */
+    background-color: white;
+    position: relative;
+}
+
+.payment button {
+    position: absolute;
+    right: 20px;
+    padding: 10px 2%;
+    gap: 10px;
+    outline: none;
+    border: none;
+    background-color:  rgb(237, 13, 13); /* Warna latar belakang biru untuk tombol pembayaran */
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.container footer {
+    color: rgb(4, 47, 68);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+/* Hide Scrollbar */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+section::-webkit-scrollbar {
+    display: none;
+}
+@media print {
+    body, .remove{
+        visibility: hidden;
+    }
+
+    #section-to-print {
+        visibility: visible;
+        position: absolute;
+    }
+}

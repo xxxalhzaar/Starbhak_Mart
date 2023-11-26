@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Judul -->
+        <header>
+            <h1 style="text-align: center;">StarbhakMart</h1>
+        </header>
+        <!-- Judul Tutup -->
+
+        <!-- Kotak utama -->
+        <div class="kotak">
+
+            <!-- Sidebar -->
+            <div class="kiri" id="section-to-print">
+
+                <!-- Button paling atas -->
+                <select class="satu">
+                    <option hidden>Pilih Jenis Pemesanan</option>
+                    <option>Take Away</option>
+                    <option>Delivery</option>
+                </select>
+                <button class="dua"><span class="material-symbols-outlined"
+                        style="color: black !important; font-size: 16px; ">
+                        face
+                    </span>POK.Iyam</button>
+                <!-- Penutup -->
+
+                <!-- Penampung class baru -->
+                <div class="belanja">
+                    <div class="barang" style="display: none;"> 
+                        <div class="detail-kiri">
+                            <p id="nama-barang" style="font-size: small; font-weight: 500;"></p>
+                            <p class="normal">Unit Price : <span id="harga-banyak"></span></p>
+                        </div>
+                        <div class="detail-kanan">
+                            <p id="harga-satuan" style="text-align: right; font-size: small;"></p>
+                            <p class="normal" style="display: flex; justify-content: space-between; gap: 4em;">Quantity : <span id="stok"></span></p>
+                        </div>
+                        <button id="remove">
+                            <span class="material-symbols-outlined" id="hapus">
+                                delete
+                                </span>
+                        </button>
+                    </div>
+                </div>
+                <!-- tutup class baru -->
+
+                <!-- Tempat Harga barang -->
+                <div class="jajan">
+                    <p id="totalPrice" style="display: none;"></p>
+                    <P style="display: flex; justify-content: space-between;">Tax : <span id="taxDiscount">0</span></P>
+                    <div class="pay">
+                        <p>Total Amount : </p>
+                        <p id="totalAmount">0</p>
+                    </div>
+                </div>
+                <!-- Penutup harga barang -->
+
+            </div>
+            <!-- Penutup Sidebar -->
+
+            <!-- Kotak penampung sebelah kanan / Main Content -->
+            <div class="kanan">
+
+                <!-- Navbar 3 paling atas-->
+                <nav>
+                    <!-- Nav sebelah kiri -->
+                    <div class="nav_kiri">
+                        <p>Item List</p>
+                    </div>
+
+                    <!-- Nav sebelah kanan -->
+                    <div class="nav_kanan">
+                        
+                        <!-- Search Icon -->
+                        <div class="cari"> 
+                            <span class="material-symbols-outlined" id="searchIcon">
+                                search
+                            </span>
+                            <input type="text" id="searchInput" placeholder="search" style="display: none;">
+                        </div>
+                        <!-- Penutup search -->
+
+                        <!-- option icon -->
+                        <span class="material-symbols-outlined">
+                            more_vert
+                        </span>
+                        <!-- penutup option -->
+
+                        <!-- urutkan item -->
+                        <span class="material-symbols-outlined" id="sortByName">
+                            swap_vert
+                            </span>
+                        <!-- penutup urut -->
+                    </div>
+                </nav>
+                <!-- Penutup Navbbar -->
+
+                <!-- List barang -->
+                <section>
+
+                    <!-- 1 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://cdn1-production-images-kly.akamaized.net/nWhTA3H4z_LhzO03xc83LFAqZY4=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2702918/original/001063400_1547374107-sushi-2853382_1920.jpg" alt="">
+                        </div>
+                        <p>Sushi</p>
+                        <h1>Rp. 3.000</h1>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="image/nasi goreng.jpeg" alt="">
+                        </div>
+                        <p>Nasi Goreng</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="https://static.toiimg.com/thumb/60018142.cms?width=1200&height=900" alt="">
+                        </div>
+                        <p>Egg sandwich</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="image/roti.jpeg" alt="" srcset="">
+                        </div>
+                        <p>Rotti</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="image/siomay.jpeg" alt="">
+                        </div>
+                        <p>Siomay</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="image/es crim.jpeg" alt="">
+                        </div>
+                        <p>Es cream</p>
+                        <h1>Rp. 7.000</h1>
+                    </div>
+
+                     <!-- 7 -->
+                     <div class="isi">
+                        <div class="foto">
+                            <img src="image/bakso.jpeg" alt="">
+                        </div>
+                        <p>Bakso</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+                </section>
+
+                <!-- Penutup list barang -->
+
+            </div>
+            <!-- Penutup kotak sebelah kanan -->
+
+        </div>
+        <!-- penutup keseluruhan kotak -->
+
+        <!-- footer -->
+        <div class="payment">
+            <Button>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                <span>
+                    <p>Payment</p>
+                    <p>(CTRL + P)</p>
+                </span>
+            </Button>
+        </div>
+
+        <footer>
+            <p>Ready</p>
+        </footer>
+
+        
+        <!-- penutup footer -->
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script src="src.js"></script>
+    <script src="short.js"></script>
+</html>
